@@ -34,16 +34,16 @@ crop.py: perform image detection, cropping and alignment
 preprocess.py: make directories for keras data generator, 101 directories for both training and testing  
                preprocess 8 classes transformation  
 model.py: all models we are comparing  
-evaluate8classes.py: loading .h5 for accurancy calculation, model ensemble mae calculation and confusion matrix plotting  
-plot_history.py: plot mae history for 101 classes classification and 8 classes classification  
-mixup_generator.py for 101trainmix.py training processes for 60 epoches  
-generator.py for 101trainlabellaug.py training processes for 60 epoches
-random_eraser.py: perform  cutout random erasing image processing for image augmentation
-distributionCal: calculate Distribution and display plot for age range  
-facedetecttest.py: test face detection model with video camera using haarcascade_frontalface_default.xml  
-run.sh: automation bash for server deployment on ubuntu machine  
+evaluate8classes.py: loading .h5 for accurancy calculation, model ensemble mae calculation and confusion matrix plotting    
+plot_history.py: plot mae history for 101 classes classification and 8 classes classification    
+mixup_generator.py for 101trainmix.py training processes for 40 epoches    
+generator.py for 101trainlabellaug.py training processes for 40 epoches  
+random_eraser.py: perform  cutout random erasing image processing for image augmentation  
+distributionCal: calculate Distribution and display plot for age range      
+facedetecttest.py: test face detection model with video camera using haarcascade_frontalface_default.xml    
+run.sh: automation bash for server deployment on ubuntu machine    
 
-training:
+training:  
 101trainMix.py  
 101trainAugmentation.py  
 VGG16_8classtrain.py  
