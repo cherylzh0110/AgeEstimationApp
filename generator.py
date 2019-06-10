@@ -1,4 +1,4 @@
-# We refer to the code here for FaceGenerator
+# Label Augmentation and image augmentation
 import random
 import math
 from pathlib import Path
@@ -11,6 +11,7 @@ import Augmentor
 
 
 def get_transform_func():
+    # apply different augmentor for image augmentation
     p = Augmentor.Pipeline()
     p.rotate(probability=1, max_left_rotation=5, max_right_rotation=5)
     p.zoom_random(probability=0.5, percentage_area=0.95)
@@ -20,6 +21,7 @@ def get_transform_func():
     p.flip_left_right(probability=0.5)
     p.random_erasing(probability=0.5, rectangle_area=0.2)
 
+    #loop over the augmentors for random generated transformation operations  
     def transform_image(image):
         image = [Image.fromarray(image)]
         for operation in p.operations:
@@ -29,7 +31,7 @@ def get_transform_func():
         return image[0]
     return transform_image
 
-
+# class for image augmentation  
 class FaceGen(Sequence):
     def __init__(self, utk_dir):
         self.images = []
@@ -63,6 +65,7 @@ class FaceGen(Sequence):
     def on_epoch_end(self):
         self.indices = np.random.permutation(self.image_num)
 
+# class for label augmentation  
 class ValidGen(Sequence):
     def __init__(self, utk_dir):
         self.images = []
