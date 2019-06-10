@@ -1,3 +1,4 @@
+# We refer to the code here for FaceGenerator
 import random
 import math
 from pathlib import Path
@@ -11,13 +12,12 @@ import Augmentor
 
 def get_transform_func():
     p = Augmentor.Pipeline()
-    p.flip_left_right(probability=0.5)
     p.rotate(probability=1, max_left_rotation=5, max_right_rotation=5)
     p.zoom_random(probability=0.5, percentage_area=0.95)
-    p.random_distortion(probability=0.5, grid_width=2, grid_height=2, magnitude=8)
-    p.random_color(probability=1, min_factor=0.8, max_factor=1.2)
-    p.random_contrast(probability=1, min_factor=0.8, max_factor=1.2)
-    p.random_brightness(probability=1, min_factor=0.8, max_factor=1.2)
+    p.random_color(probability=1, min_factor=0.8, max_factor=1.1)
+    p.random_contrast(probability=1, min_factor=0.8, max_factor=1.1)
+    p.random_brightness(probability=1, min_factor=0.8, max_factor=1.1)
+    p.flip_left_right(probability=0.5)
     p.random_erasing(probability=0.5, rectangle_area=0.2)
 
     def transform_image(image):
@@ -30,7 +30,7 @@ def get_transform_func():
     return transform_image
 
 
-class FaceGenerator(Sequence):
+class FaceGen(Sequence):
     def __init__(self, utk_dir):
         self.images = []
         image_dir = Path(utk_dir)
@@ -63,7 +63,7 @@ class FaceGenerator(Sequence):
     def on_epoch_end(self):
         self.indices = np.random.permutation(self.image_num)
 
-class ValGenerator(Sequence):
+class ValidGen(Sequence):
     def __init__(self, utk_dir):
         self.images = []
         image_dir = Path(utk_dir)
