@@ -81,7 +81,7 @@ model.compile(optimizer= adam, loss='categorical_crossentropy', metrics=[age_mae
 history = model.fit_generator(generator=training_generator,
                                    steps_per_epoch=20500 // batch_size,
                                    validation_data=(x_test, y_test),
-                                   epochs=60, verbose=1,
+                                   epochs=40, verbose=1,
                                    callbacks=callbacks)
 
 np.savez(output_path + "/history.npz", history=history.history)
