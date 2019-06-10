@@ -48,6 +48,8 @@ training:
 101trainAugmentation.py  
 VGG16_8classtrain.py  
 res50_8classtrain.py  
+Training are based on UTK dataset, which you can download here:  
+https://susanqq.github.io/UTKFace/
 
 static file including all frontend files  
 result file including all confusion matrix and training process plots  
