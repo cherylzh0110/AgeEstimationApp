@@ -26,9 +26,11 @@ mixup generator
 
 .py files:    
 utkcamera.py: Real-time Prediction camerer which will be generated in server.py, read in 101 class model: utk.h5  
-you can download the file on google drive  
+you can download the file on google drive: https://drive.google.com/drive/u/0/folders/1KfUh3ynBOsggfm9SiDXHKcWFh0cBemNa  
+and save them in model folder when you run the server.py to make prediction
 server.py: flask server, read in model of 8 classes: model64.h5  
-you can download the file on google drive  
+you can download the file on google drive: https://drive.google.com/drive/u/0/folders/1KfUh3ynBOsggfm9SiDXHKcWFh0cBemNa  
+and save them in model folder when you run the server.py to make prediction
 crop.py: perform image detection, cropping and alignment  
 preprocess.py: make directories for keras data generator, 101 directories for both training and testing  
                preprocess 8 classes transformation  
