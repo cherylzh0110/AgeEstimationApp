@@ -1,13 +1,13 @@
 # AgeEstimationApp
-Training and Evaluation in two senarios:  
+Training and Evaluation in two scenarios:  
 8 classes classification, predict age interval probability
 101 classes classification, predict exact age estimation  
 Accurancy comparision for 8 classes classification   
 MAE value calculation for 101 classes classification   
 
 Go to website or run on localhost by running: python server.py & go to http:www.4everyoung.group:5000  
-if you want to run server locally, you need to install both requirements.txt and pip install dlib-19.8.1-cp36-cp36m-win_amd64.whl  
-(notice this whl is only for python3.6 version)  
+if you want to run server locally, you need to install both requirements.txt and   
+pip install dlib-19.8.1-cp36-cp36m-win_amd64.whl(notice this whl is only for python3.6 version)  
 
 parameters tuning:  
 optimizer  
