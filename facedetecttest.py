@@ -2,7 +2,7 @@ import cv2
 import sys
 import skvideo.io
 
-faceCascade = cv2.CascadeClassifier('./cascades/data/haarcascade_frontalface_default.xml')
+faceCascade = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
 
 video_capture = skvideo.io.VideoCapture(0)
 
