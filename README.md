@@ -41,7 +41,7 @@ generator.py for 101trainlabellaug.py training processes for 40 epoches
 random_eraser.py: perform  cutout random erasing image processing for image augmentation  
 distributionCal: calculate Distribution and display plot for age range      
 facedetecttest.py: test face detection model with video camera using haarcascade_frontalface_default.xml    
-run.sh: automation bash for server deployment on ubuntu machine    
+run.sh: automation bash script for server deployment in production on ubuntu machine    
 
 training:  
 101trainMix.py  
@@ -50,6 +50,8 @@ VGG16_8classtrain.py
 res50_8classtrain.py  
 Training are based on UTK dataset, which you can download here:  
 https://susanqq.github.io/UTKFace/
+Dataset with best 101 ResNet50 training model is with 20% margin, you can download our preprocessed dataset: data1232s here:  
+https://drive.google.com/drive/u/0/folders/1KfUh3ynBOsggfm9SiDXHKcWFh0cBemNa
 
 static file including all frontend files  
 result file including all confusion matrix and training process plots  
