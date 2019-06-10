@@ -2,11 +2,11 @@ import cv2
 from keras.models import Sequential, load_model
 import numpy as np
 
-facec = cv2.CascadeClassifier('./cascades/data/haarcascade_frontalface_default.xml')
+facec = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
 
 def get_model():
     global model
-    model = load_model('./utk.h5')
+    model = load_model('./models/utk.h5')
     model._make_predict_function()
 font = cv2.FONT_HERSHEY_SIMPLEX
 print(" * Loading Keras model...")
