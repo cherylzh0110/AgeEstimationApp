@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technologies of Age Estimation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+  <body id="main">
+  	<div id="home">
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+	<div class="collapse navbar-collapse" id="menu">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+	<a class="nav-link" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+	<a class="nav-link" href="system.html" target="_blank">Age Estimate</a>
+			</li>
+		<li class="nav-item active">
+	<a class="nav-link" href="#main">About</a>
+		</li>
+		</ul>
+	</div>
+	</div>
+	</nav>
+	</div>
+     <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+        <div class="jumbotron">
+      <h4>Convolutional neural network (CNN)</h4>
+      <p>A Convolutional Neural Network (CNN, or ConvNet) are a special kind of multi-layer neural networks, designed to recognize visual patterns directly from pixel images with minimal preprocessing. A convolutional neural network consists of an input and an output layer, as well as multiple hidden layers. The hidden layers of a CNN typically consist of convolutional layers, RELU layer i.e. activation function, pooling layers, fully connected layers and normalization layers. </p>
+      <img src="img/CNN.png" alt="CNN image" width="600" height="200"/>
+       <style>
+            body{
+            text-align: center;
+            }
+            </style>
+      </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+      <div class="jumbotron">
+      <h4>VGG 16</h4>
+      <p>VGG16 is a convolutional neural network model proposed by K. Simonyan and A. Zisserman from the University of Oxford in the paper “Very Deep Convolutional Networks for Large-Scale Image Recognition”. The model achieves 92.7% top-5 test accuracy in ImageNet, which is a dataset of over 14 million images belonging to 1000 classes. It was one of the famous model submitted to ILSVRC-2014. It makes the improvement over AlexNet by replacing large kernel-sized filters (11 and 5 in the first and second convolutional layer, respectively) with multiple 3×3 kernel-sized filters one after another. VGG16 was trained for weeks and was using NVIDIA Titan Black GPU’s. </p>
+      <img src="img/VGG.png" alt="VGG image" width="600" height="100"/>
+       <style>
+            body{
+            text-align: center;
+            }
+            </style>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+        <div class="jumbotron">
+      <h4>Alex Net</h4>
+      <p>Alex Net has a very similay architeecture as LeNet created by Yann LeCun et al. but Alex Net is depper, which contains more filter per layer, and it has stacked convolutional layers. It consisted 11x11, 5x5,3x3, convolutions, max pooling, dropout, data augmentation, ReLU activations, SGD with momentum. It attached ReLU activations after every convolutional and fully-connected layer.</p>
+      <img src="img/ALEXNET.png" alt="ALEXNET image" width="600" height="200"/>
+      <style>
+            body{
+            text-align: center;
+            }
+            </style>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+      <div class="jumbotron">
+      <h4>Residual Net</h4>
+      <p>The core feature of Residual Net is it utilize skip connections, or short-cuts to jump over some layers. Typical Residual Net models are implemented with single-layer skips.The skipping over layer's could potentially avoid the problem of vanishing gradients. No extra parameters or changes to the learning algorithm were needed. In other words, ResNets breaks down a very deep plain neural network into small chunks of network connected through skip or shortcut connections to form a bigger network.</p>
+      <img src="img/resNet.png" alt="ALEXNET image" width="600" height="200"/>
+      <style>
+            body{
+            text-align: center;
+            }
+            </style>
+        </div>
+      </div>
+    </div>
+    <footer><center> Deep Learning embedded Age Estimation Application: Hong Zhang, Qijie Li  </center></footer>
+  </body>
+    <script src="js/main_system.js"></script>
+</html>
