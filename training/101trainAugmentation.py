@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from model import get_model
 from plothistory import plot_acc, plot_mae
 from random_eraser import get_random_eraser
-from generator import FaceGenerator, ValGenerator
+from generator import FaceGen, ValidGen
 import numpy as np
 from keras.optimizers import SGD, Adam
 
@@ -33,9 +33,9 @@ class Schedule:
             return self.initial_lr * 0.04
         return self.initial_lr * 0.008
 
-train_generator = FaceGenerator(utk_dir=train_path)
+faceGen = FaceGen(utk_dir=train_path)
 # only rescaling
-validation_generator = ValGenerator(utk_dir=test_path)
+validGen = ValidGen(utk_dir=test_path)
 
 num_classes = 101
 model = get_model("ResNet")
@@ -50,16 +50,15 @@ callbacks = [LearningRateScheduler(schedule=Schedule(40, initial_lr=0.001)),
                                  monitor="val_age_mae",
                                  verbose=1,
                                  save_best_only=True,
-                                 mode="min")
-                 ]
+                                 mode="min")]
 
 #sgd = SGD(lr=1e-4, momentum=0.9, nesterov=False)
 adam = Adam(lr=0.001)    #adam is better than sgd
 model.compile(optimizer= adam, loss='categorical_crossentropy', metrics=[age_mae])
 # fine-tune the model
-history = model.fit_generator(generator=train_generator,
+history = model.fit_generator(generator=faceGen,
                                 epochs=40,
-                                validation_data = validation_generator,
+                                validation_data = validGen,
                                 verbose=1,
                                 callbacks=callbacks
                                 )
