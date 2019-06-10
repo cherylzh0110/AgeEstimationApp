@@ -84,31 +84,3 @@ history = model.fit_generator(generator=training_generator,
                                    callbacks=callbacks)
 
 np.savez(output_path + "/history.npz", history=history.history)
-
-from evaluate import plot_confusion_matrix
-plot_mae(history)
-'''
-def maeCal(y_test,predicted_ages):
-    #print(len(predicted_ages))  # Y_age: a list of actual age, y_pred: a list of predicted ages
-    return np.mean(np.abs(np.array(predicted_ages) - np.array(int(x) for x in y_test)))
-print(maeCal(y_test, predicted_ages))
-datagen = ImageDataGenerator(
-        rotation_range=40,
-        width_shift_range=0.2,
-        height_shift_range=0.2,
-        rescale=1./255,
-        shear_range=0.2,
-        zoom_range=0.2,
-        horizontal_flip=True,
-        fill_mode='nearest')
-
-datagen = ImageDataGenerator(
-        rotation_range=40,
-        width_shift_range=0.2,
-        height_shift_range=0.2,
-        shear_range=0.2,
-        zoom_range=0.2,
-        horizontal_flip=True,
-        fill_mode='nearest')
-'''
-
