@@ -48,12 +48,13 @@ training:
 101trainAugmentation.py  
 VGG16_8classtrain.py  
 res50_8classtrain.py  
-Training are based on UTK dataset, which you can download here:  
-https://susanqq.github.io/UTKFace/
-Dataset with best 101 ResNet50 training model is with 20% margin, you can download our preprocessed dataset: 
-data1232s is for 101trainAugmentation.py training:    
-data123 is for 101trainMix.py(different structure, contains 101 age files as input directory)    
-https://drive.google.com/drive/u/0/folders/1KfUh3ynBOsggfm9SiDXHKcWFh0cBemNa  
+Training are based on UTK dataset, which you can download here:    
+https://susanqq.github.io/UTKFace/  
+Dataset with best 101 ResNet50 training model is with 20% margin, you can download our preprocessed dataset:  
+data1232s is for 101trainAugmentation.py training:   
+https://drive.google.com/drive/u/0/folders/1KfUh3ynBOsggfm9SiDXHKcWFh0cBemNa   
+data123 is for 101trainMix.py(different structure, contains 101 age files as input directory)      
+https://drive.google.com/drive/u/0/folders/1KfUh3ynBOsggfm9SiDXHKcWFh0cBemNa    
   
 static file including all frontend files  
 result file including all confusion matrix and training process plots  
