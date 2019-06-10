@@ -1,6 +1,5 @@
-import numpy as np
-
-
+# we refer to repository :https://github.com/yu4u/mixup-generator   
+import numpy as np  
 class MixupGenerator():
     def __init__(self, X_train, y_train, batch_size=32, alpha=0.2, shuffle=True, datagen=None):
         self.X_train = X_train
