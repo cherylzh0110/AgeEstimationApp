@@ -1,6 +1,7 @@
 # AgeEstimationApp
 Training in two ways:  
-8 classes classification, predict age interval  
+8 classes classification, predict age interval probability
+
 101 classes classification, predict exact age estimation  
 
 Evaluation:  
