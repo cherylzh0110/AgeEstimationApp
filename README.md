@@ -44,8 +44,10 @@ facedetecttest.py: test face detection model with video camera using haarcascade
 run.sh: automation bash for server deployment on ubuntu machine  
 
 training:
-101trainmix.py
-101trainlabellaug.py
+101trainMix.py  
+101trainAugmentation.py  
+VGG16_8classtrain.py  
+res50_8classtrain.py  
 
 static file including all frontend files  
 result file including all confusion matrix and training process plots  
