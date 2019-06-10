@@ -4,7 +4,7 @@ import cv2
 from keras.models import Sequential, load_model
 import numpy as np
 
-facec = cv2.CascadeClassifier('./cascades/data/haarcascade_frontalface_default.xml')
+facec = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
 
 def get_model():
     global model
