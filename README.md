@@ -1,19 +1,14 @@
 # AgeEstimationApp
 Training in two ways:  
 8 classes classification, predict age interval probability
-
 101 classes classification, predict exact age estimation  
 
 Evaluation:  
 accurancy comparision for 8 classes classification   
 MAE value calculation for 101 classes classification   
 
-Applications of 2 ways classification:  
+
 Go to website or run on localhost by running: python server.py & go to http:www.4everyoung.group:5000  
-
-101 classes classification is applied on live streaming prediction through webcam  
-
-8 classes classification is applied on photo uploading or photo taking, displayed as piechart, present probability of 8 classes  
 
 parameters tuning:  
 optimizer  
