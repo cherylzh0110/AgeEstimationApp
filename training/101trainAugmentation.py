@@ -23,7 +23,7 @@ class Schedule:
     def __init__(self, nb_epochs, initial_lr):
         self.epochs = nb_epochs
         self.initial_lr = initial_lr
-
+#reduce 5 for each 10 epoches, total 40 epoches
     def __call__(self, epoch_idx):
         if epoch_idx < self.epochs * 0.25:
             return self.initial_lr
@@ -45,8 +45,8 @@ def age_mae(y_true, y_pred):
     pred_age = K.sum(y_pred * K.arange(0, 101, dtype="float32"), axis=-1)
     mae = K.mean(K.abs(true_age - pred_age))
     return mae
-callbacks = [LearningRateScheduler(schedule=Schedule(60, initial_lr=0.001)),
-                 ModelCheckpoint("weightslab.{epoch:03d}-{val_loss:.3f}-{val_age_mae:.3f}.h5",
+callbacks = [LearningRateScheduler(schedule=Schedule(40, initial_lr=0.001)),
+                 ModelCheckpoint("weightslab.{epoch:02d}-{val_loss:.2f}-{val_age_mae:.2f}.h5",
                                  monitor="val_age_mae",
                                  verbose=1,
                                  save_best_only=True,
@@ -58,7 +58,7 @@ adam = Adam(lr=0.001)    #adam is better than sgd
 model.compile(optimizer= adam, loss='categorical_crossentropy', metrics=[age_mae])
 # fine-tune the model
 history = model.fit_generator(generator=train_generator,
-                                epochs=65,
+                                epochs=40,
                                 validation_data = validation_generator,
                                 verbose=1,
                                 callbacks=callbacks
