@@ -1,0 +1,160 @@
+Epoch 1/40
+647/647 [==============================] - 12150s 19s/step - loss: 4.5282 - age_mae: 14.3765 - val_loss: 4.0212 - val_age_mae: 11.7700
+
+Epoch 00001: val_age_mae improved from inf to 11.77005, saving model to weightslab.001-4.021-11.770.h5
+Epoch 2/40
+647/647 [==============================] - 11362s 18s/step - loss: 3.8724 - age_mae: 10.7183 - val_loss: 3.8354 - val_age_mae: 9.9624
+
+Epoch 00002: val_age_mae improved from 11.77005 to 9.96245, saving model to weightslab.002-3.835-9.962.h5
+Epoch 3/40
+647/647 [==============================] - 11288s 17s/step - loss: 3.6964 - age_mae: 8.8626 - val_loss: 4.1429 - val_age_mae: 15.3745
+
+Epoch 00003: val_age_mae did not improve from 9.96245
+Epoch 4/40
+647/647 [==============================] - 11384s 18s/step - loss: 3.5951 - age_mae: 8.0136 - val_loss: 3.7259 - val_age_mae: 9.2641
+
+Epoch 00004: val_age_mae improved from 9.96245 to 9.26405, saving model to weightslab.004-3.726-9.264.h5
+Epoch 5/40
+647/647 [==============================] - 11742s 18s/step - loss: 3.5162 - age_mae: 7.4050 - val_loss: 3.6705 - val_age_mae: 8.3459
+
+Epoch 00005: val_age_mae improved from 9.26405 to 8.34585, saving model to weightslab.005-3.671-8.346.h5
+Epoch 6/40
+647/647 [==============================] - 11767s 18s/step - loss: 3.4597 - age_mae: 6.9947 - val_loss: 3.7369 - val_age_mae: 8.8107
+
+Epoch 00006: val_age_mae did not improve from 8.34585
+Epoch 7/40
+647/647 [==============================] - 6648s 10s/step - loss: 3.4224 - age_mae: 6.6716 - val_loss: 3.6412 - val_age_mae: 8.0278
+
+Epoch 00007: val_age_mae improved from 8.34585 to 8.02784, saving model to weightslab.007-3.641-8.028.h5
+Epoch 8/40
+647/647 [==============================] - 10068s 16s/step - loss: 3.4034 - age_mae: 6.5810 - val_loss: 4.3226 - val_age_mae: 13.1949
+
+Epoch 00008: val_age_mae did not improve from 8.02784
+Epoch 9/40
+647/647 [==============================] - 7007s 11s/step - loss: 3.3807 - age_mae: 6.3754 - val_loss: 3.7034 - val_age_mae: 8.9776
+
+Epoch 00009: val_age_mae did not improve from 8.02784
+Epoch 10/40
+647/647 [==============================] - 6532s 10s/step - loss: 3.3575 - age_mae: 6.2364 - val_loss: 3.5546 - val_age_mae: 7.8741
+
+Epoch 00010: val_age_mae improved from 8.02784 to 7.87409, saving model to weightslab.010-3.555-7.874.h5
+Epoch 11/40
+647/647 [==============================] - 6757s 10s/step - loss: 3.2533 - age_mae: 5.6020 - val_loss: 3.2899 - val_age_mae: 5.7282
+
+Epoch 00011: val_age_mae improved from 7.87409 to 5.72821, saving model to weightslab.011-3.290-5.728.h5
+Epoch 12/40
+647/647 [==============================] - 6761s 10s/step - loss: 3.2118 - age_mae: 5.3828 - val_loss: 3.3492 - val_age_mae: 6.3380
+
+Epoch 00012: val_age_mae did not improve from 5.72821
+Epoch 13/40
+647/647 [==============================] - 6147s 10s/step - loss: 3.1814 - age_mae: 5.2150 - val_loss: 3.2799 - val_age_mae: 5.7835
+
+Epoch 00013: val_age_mae did not improve from 5.72821
+Epoch 14/40
+647/647 [==============================] - 6127s 9s/step - loss: 3.1759 - age_mae: 5.1759 - val_loss: 3.2582 - val_age_mae: 5.8342
+
+Epoch 00014: val_age_mae did not improve from 5.72821
+Epoch 15/40
+647/647 [==============================] - 6184s 10s/step - loss: 3.1554 - age_mae: 5.0505 - val_loss: 3.3661 - val_age_mae: 5.8827
+
+Epoch 00015: val_age_mae did not improve from 5.72821
+Epoch 16/40
+647/647 [==============================] - 6531s 10s/step - loss: 3.1460 - age_mae: 4.9912 - val_loss: 3.2789 - val_age_mae: 5.9142
+
+Epoch 00016: val_age_mae did not improve from 5.72821
+Epoch 17/40
+647/647 [==============================] - 6226s 10s/step - loss: 3.1320 - age_mae: 4.9161 - val_loss: 3.2638 - val_age_mae: 5.6605
+
+Epoch 00017: val_age_mae improved from 5.72821 to 5.66054, saving model to weightslab.017-3.264-5.661.h5
+Epoch 18/40
+647/647 [==============================] - 6386s 10s/step - loss: 3.1280 - age_mae: 4.9055 - val_loss: 3.3296 - val_age_mae: 6.2862
+
+Epoch 00018: val_age_mae did not improve from 5.66054
+Epoch 19/40
+647/647 [==============================] - 6107s 9s/step - loss: 3.1033 - age_mae: 4.7663 - val_loss: 3.2741 - val_age_mae: 5.6436
+
+Epoch 00019: val_age_mae improved from 5.66054 to 5.64357, saving model to weightslab.019-3.274-5.644.h5
+Epoch 20/40
+647/647 [==============================] - 6104s 9s/step - loss: 3.0948 - age_mae: 4.7023 - val_loss: 3.2748 - val_age_mae: 5.8175
+
+Epoch 00020: val_age_mae did not improve from 5.64357
+Epoch 21/40
+647/647 [==============================] - 6106s 9s/step - loss: 3.0601 - age_mae: 4.5234 - val_loss: 3.2299 - val_age_mae: 5.4147
+
+Epoch 00021: val_age_mae improved from 5.64357 to 5.41473, saving model to weightslab.021-3.230-5.415.h5
+Epoch 22/40
+647/647 [==============================] - 6101s 9s/step - loss: 3.0355 - age_mae: 4.3828 - val_loss: 3.2212 - val_age_mae: 5.4061
+
+Epoch 00022: val_age_mae improved from 5.41473 to 5.40614, saving model to weightslab.022-3.221-5.406.h5
+Epoch 23/40
+647/647 [==============================] - 6099s 9s/step - loss: 3.0230 - age_mae: 4.3293 - val_loss: 3.2163 - val_age_mae: 5.3248
+
+Epoch 00023: val_age_mae improved from 5.40614 to 5.32477, saving model to weightslab.023-3.216-5.325.h5
+Epoch 24/40
+647/647 [==============================] - 6093s 9s/step - loss: 3.0108 - age_mae: 4.2827 - val_loss: 3.2275 - val_age_mae: 5.3774
+
+Epoch 00024: val_age_mae did not improve from 5.32477
+Epoch 25/40
+647/647 [==============================] - 6091s 9s/step - loss: 3.0113 - age_mae: 4.2846 - val_loss: 3.2153 - val_age_mae: 5.4030
+
+Epoch 00025: val_age_mae did not improve from 5.32477
+Epoch 26/40
+647/647 [==============================] - 6117s 9s/step - loss: 3.0024 - age_mae: 4.2557 - val_loss: 3.2045 - val_age_mae: 5.2731
+
+Epoch 00026: val_age_mae improved from 5.32477 to 5.27309, saving model to weightslab.026-3.205-5.273.h5
+Epoch 27/40
+647/647 [==============================] - 6087s 9s/step - loss: 2.9937 - age_mae: 4.2188 - val_loss: 3.2379 - val_age_mae: 5.3611
+
+Epoch 00027: val_age_mae did not improve from 5.27309
+Epoch 28/40
+647/647 [==============================] - 6086s 9s/step - loss: 2.9845 - age_mae: 4.1815 - val_loss: 3.2291 - val_age_mae: 5.3380
+
+Epoch 00028: val_age_mae did not improve from 5.27309
+Epoch 29/40
+647/647 [==============================] - 6093s 9s/step - loss: 2.9748 - age_mae: 4.1089 - val_loss: 3.2498 - val_age_mae: 5.4173
+
+Epoch 00029: val_age_mae did not improve from 5.27309
+Epoch 30/40
+647/647 [==============================] - 6094s 9s/step - loss: 2.9734 - age_mae: 4.1099 - val_loss: 3.2707 - val_age_mae: 5.4847
+
+Epoch 00030: val_age_mae did not improve from 5.27309
+Epoch 31/40
+647/647 [==============================] - 6094s 9s/step - loss: 2.9674 - age_mae: 4.0747 - val_loss: 3.2357 - val_age_mae: 5.3732
+
+Epoch 00031: val_age_mae did not improve from 5.27309
+Epoch 32/40
+647/647 [==============================] - 6092s 9s/step - loss: 2.9617 - age_mae: 4.0434 - val_loss: 3.2235 - val_age_mae: 5.2978
+
+Epoch 00032: val_age_mae did not improve from 5.27309
+Epoch 33/40
+647/647 [==============================] - 6100s 9s/step - loss: 2.9541 - age_mae: 4.0167 - val_loss: 3.2302 - val_age_mae: 5.3090
+
+Epoch 00033: val_age_mae did not improve from 5.27309
+Epoch 34/40
+647/647 [==============================] - 6096s 9s/step - loss: 2.9418 - age_mae: 3.9801 - val_loss: 3.2154 - val_age_mae: 5.2128
+
+Epoch 00034: val_age_mae improved from 5.27309 to 5.21279, saving model to weightslab.034-3.215-5.213.h5
+Epoch 35/40
+647/647 [==============================] - 6088s 9s/step - loss: 2.9465 - age_mae: 3.9772 - val_loss: 3.2133 - val_age_mae: 5.1638
+
+Epoch 00035: val_age_mae improved from 5.21279 to 5.16379, saving model to weightslab.035-3.213-5.164.h5
+Epoch 36/40
+647/647 [==============================] - 6093s 9s/step - loss: 2.9425 - age_mae: 3.9795 - val_loss: 3.2362 - val_age_mae: 5.3167
+
+Epoch 00036: val_age_mae did not improve from 5.16379
+Epoch 37/40
+647/647 [==============================] - 6084s 9s/step - loss: 2.9531 - age_mae: 4.0059 - val_loss: 3.2475 - val_age_mae: 5.3592
+
+Epoch 00037: val_age_mae did not improve from 5.16379
+Epoch 38/40
+647/647 [==============================] - 6084s 9s/step - loss: 2.9397 - age_mae: 3.9514 - val_loss: 3.2369 - val_age_mae: 5.3543
+
+Epoch 00038: val_age_mae did not improve from 5.16379
+Epoch 39/40
+647/647 [==============================] - 6082s 9s/step - loss: 2.9400 - age_mae: 3.9599 - val_loss: 3.2523 - val_age_mae: 5.3163
+
+Epoch 00039: val_age_mae did not improve from 5.16379
+Epoch 40/40
+647/647 [==============================] - 8653s 13s/step - loss: 2.9383 - age_mae: 3.9398 - val_loss: 3.2486 - val_age_mae: 5.3649
+
+Epoch 00040: val_age_mae did not improve from 5.16379
