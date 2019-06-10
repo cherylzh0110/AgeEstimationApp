@@ -1,5 +1,5 @@
 # AgeEstimationApp
-Training and Evaluation in two ways:  
+Training and Evaluation in two senarios:  
 8 classes classification, predict age interval probability
 101 classes classification, predict exact age estimation  
 Accurancy comparision for 8 classes classification   
