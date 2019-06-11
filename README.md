@@ -1,6 +1,6 @@
 # AgeEstimationApp
 Training and Evaluation in two scenarios:  
-8 classes classification, predict age interval probability
+8 classes classification, predict age interval probability  
 101 classes classification, predict exact age estimation  
 Accurancy comparision for 8 classes classification   
 MAE value calculation for 101 classes classification   
