@@ -5,7 +5,7 @@ Training and Evaluation in two scenarios:
 Accurancy comparision for 8 classes classification   
 MAE value calculation for 101 classes classification   
 
-Go to our website http:www.4everyoung.group:5000 or run on localhost by running:    
+Go to our website www.4everyoung.group:5000 or run on localhost by running:    
 python server.py & go to your localhost: http://127.0.0.1:5000  
 if you want to run server locally where virtual environment is activated, you need to install both requirements.txt and   
 pip install dlib-19.8.1-cp36-cp36m-win_amd64.whl(notice this whl is only for python3.6 version)  
