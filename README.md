@@ -55,9 +55,9 @@ data1232s is for 101trainAugmentation.py training:
 https://drive.google.com/drive/u/0/folders/1KfUh3ynBOsggfm9SiDXHKcWFh0cBemNa   
 data123 is for 101trainMix.py(different structure, contains 101 age files as input directory)      
 https://drive.google.com/drive/u/0/folders/1KfUh3ynBOsggfm9SiDXHKcWFh0cBemNa    
-  
-static file including all frontend files  
-result file including all confusion matrix and training process plots  
+
+static directory including all frontend files  
+result directory including all confusion matrix and training process results or plots 
 
 For Random Erasing implementation, we refer to repository :https://github.com/yu4u/cutout-random-erasing  
 For mixup generator implementation, we refer to repository :https://github.com/yu4u/mixup-generator  
